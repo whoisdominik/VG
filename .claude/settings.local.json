@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npx tsc:*)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\('linked'\\)\\)\\)\")",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\('link'\\) || k.toLowerCase\\(\\).includes\\('social'\\)\\).join\\(', '\\)\\)\")",
+      "Bash(timeout 15 npm run build)",
+      "Bash(rm \"c:/Users/Dominik/VG/next.config.ts\")",
+      "Bash(npm run:*)",
+      "Bash(npx playwright:*)",
+      "Bash(node -e ':*)",
+      "Bash(mkdir -p \"c:/Users/Dominik/VG/screenshots\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/financial-strategy)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/compliance-audits)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3003/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/)",
+      "Bash(taskkill /f /im node.exe)",
+      "Bash(cmd /c \"taskkill /f /im node.exe\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3010/)",
+      "Bash(node /tmp/screenshot.js)",
+      "Bash(cp /tmp/screenshot.js \"c:/Users/Dominik/VG/screenshot.js\")",
+      "Bash(node screenshot.js)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
