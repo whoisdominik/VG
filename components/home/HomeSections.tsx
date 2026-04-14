@@ -166,7 +166,7 @@ function ServiceCard({
           style={{
             fontSize: '0.58rem',
             letterSpacing: '0.28em',
-            color: 'rgba(201,168,76,0.4)',
+            color: 'rgba(140,30,74,0.4)',
           }}
         >
           {String(cardNumber).padStart(2, '0')}
@@ -208,7 +208,7 @@ export default function HomeSections() {
   return (
     <>
       {/* ── Section 1: Stats Strip ─────────────────────────────────────── */}
-      <section style={{ background: '#060B14', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+      <section style={{ background: '#091018', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
         <div
           ref={statsRef}
           className="max-w-screen-xl mx-auto px-6 lg:px-10 py-20 flex flex-wrap justify-center items-center gap-0"
@@ -259,7 +259,7 @@ export default function HomeSections() {
                 style={{ fontSize: 'clamp(1.7rem, 3vw, 2.6rem)', color: 'var(--color-text-primary)' }}
               >
                 Six disciplines.{' '}
-                <span className="italic" style={{ color: 'rgba(201,168,76,0.8)' }}>One advisor.</span>
+                <span className="italic" style={{ color: 'rgba(140,30,74,0.8)' }}>One advisor.</span>
               </h2>
             </div>
           </motion.div>
@@ -342,7 +342,7 @@ export default function HomeSections() {
                     style={{
                       width: '2px',
                       minHeight: '1.2rem',
-                      background: 'rgba(201,168,76,0.45)',
+                      background: 'rgba(140,30,74,0.45)',
                       borderRadius: '1px',
                     }}
                     aria-hidden="true"
@@ -372,14 +372,14 @@ export default function HomeSections() {
       {/* ── Section 6: Contact CTA ─────────────────────────────────────── */}
       <section
         className="relative overflow-hidden py-[var(--section-padding)] px-6 lg:px-10"
-        style={{ background: '#060B14' }}
+        style={{ background: '#091018' }}
       >
         {/* Subtle radial glow */}
         <div
           className="absolute inset-0 pointer-events-none"
           aria-hidden="true"
           style={{
-            background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(201,168,76,0.04) 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(140,30,74,0.04) 0%, transparent 65%)',
           }}
         />
 

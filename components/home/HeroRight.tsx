@@ -5,20 +5,25 @@ import { Play } from 'lucide-react'
 
 export default function HeroRight() {
   return (
-    <div className="relative flex items-center justify-start w-full h-full min-h-[60vh] lg:min-h-screen px-8 lg:px-10 xl:px-16 pt-8 pb-16 lg:pt-24">
+    /*
+     * Mobile: flex-1 so this panel fills whatever h-screen space HeroLeft
+     *         didn't use; min-h-0 prevents flex overflow.
+     * Desktop: full column height, centred, generous padding.
+     */
+    <div className="relative flex-1 lg:flex-none flex items-stretch lg:items-center justify-start w-full min-h-0 lg:min-h-screen px-6 lg:px-10 xl:px-14 pb-6 lg:pt-24 lg:pb-16">
 
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full max-w-sm lg:max-w-[420px]"
+        className="w-full flex flex-col lg:max-w-[580px]"
       >
-        {/* Label */}
+        {/* Label — desktop only, hidden on mobile to save height */}
         <motion.div
           initial={{ opacity: 0, x: -12 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.55, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-center gap-3 mb-6"
+          className="hidden lg:flex items-center gap-3 mb-6"
         >
           <div
             className="shrink-0"
@@ -37,14 +42,22 @@ export default function HeroRight() {
           </p>
         </motion.div>
 
-        {/* Video container */}
+        {/*
+         * Video container:
+         *   Mobile  — flex-1 + height: 100% fills remaining panel space
+         *   Desktop — 16/9 aspect ratio, max-width 580 px
+         */}
         <div
-          className="relative w-full overflow-hidden"
+          className="relative w-full overflow-hidden flex-1 lg:flex-none"
           style={{
-            aspectRatio: '16/9',
-            boxShadow: '0 0 0 1px rgba(201,168,76,0.12), 0 32px 80px rgba(0,0,0,0.6)',
+            /* desktop: fixed aspect ratio; mobile: height driven by flex */
+            aspectRatio: undefined,
+            boxShadow: '0 0 0 1px rgba(140,30,74,0.12), 0 32px 80px rgba(0,0,0,0.6)',
           }}
         >
+          {/* aspect-ratio shim — desktop only */}
+          <div className="hidden lg:block" style={{ aspectRatio: '16/9', width: '100%' }} />
+
           {/* Actual video */}
           <video
             className="absolute inset-0 w-full h-full object-cover"
@@ -62,13 +75,13 @@ export default function HeroRight() {
             style={{ background: '#0A1220' }}
           >
             <div
-              className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-400"
+              className="w-12 h-12 rounded-full flex items-center justify-center"
               style={{
-                border: '1px solid rgba(201,168,76,0.4)',
-                background: 'rgba(201,168,76,0.06)',
+                border: '1px solid rgba(140,30,74,0.4)',
+                background: 'rgba(140,30,74,0.06)',
               }}
             >
-              <Play size={14} style={{ color: 'rgba(201,168,76,0.7)' }} fill="currentColor" />
+              <Play size={14} style={{ color: 'rgba(140,30,74,0.7)' }} fill="currentColor" />
             </div>
             <p
               className="font-sans text-center px-8 leading-relaxed"
@@ -78,15 +91,15 @@ export default function HeroRight() {
             </p>
           </div>
 
-          {/* Vignette — 4-directional, blends into background */}
+          {/* Vignette — blends into updated bg */}
           <div
             className="absolute inset-0 pointer-events-none z-10"
             style={{
               background: [
-                'linear-gradient(to right,  #0B1220 0%, transparent 20%)',
-                'linear-gradient(to left,   #0E1728 0%, transparent 20%)',
-                'linear-gradient(to bottom, #0B1220 0%, transparent 24%)',
-                'linear-gradient(to top,    #0B1728 0%, transparent 24%)',
+                'linear-gradient(to right,  #0C1220 0%, transparent 22%)',
+                'linear-gradient(to left,   #101535 0%, transparent 22%)',
+                'linear-gradient(to bottom, #0C1220 0%, transparent 26%)',
+                'linear-gradient(to top,    #0C1535 0%, transparent 26%)',
               ].join(', '),
             }}
             aria-hidden="true"
@@ -95,19 +108,17 @@ export default function HeroRight() {
           {/* Inner border glow */}
           <div
             className="absolute inset-0 pointer-events-none z-20"
-            style={{
-              boxShadow: 'inset 0 0 0 1px rgba(201,168,76,0.08)',
-            }}
+            style={{ boxShadow: 'inset 0 0 0 1px rgba(140,30,74,0.08)' }}
             aria-hidden="true"
           />
         </div>
 
-        {/* Caption */}
+        {/* Caption — desktop only */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.85, duration: 0.8 }}
-          className="mt-5 font-sans leading-relaxed"
+          className="hidden lg:block mt-5 font-sans leading-relaxed"
           style={{ fontSize: '0.68rem', color: 'var(--color-text-tertiary)', letterSpacing: '0.07em' }}
         >
           Senior financial advisor &amp; interim CFO operating across EU/EEA markets.

@@ -11,7 +11,7 @@ export default function AdvisorStrip() {
       <div
         style={{
           background: 'var(--color-surface)',
-          border: '1px solid rgba(201,168,76,0.18)',
+          border: '1px solid rgba(140,30,74,0.18)',
           borderLeft: 'none',
           borderRight: 'none',
         }}
@@ -38,7 +38,7 @@ export default function AdvisorStrip() {
                 height: '64px',
                 borderRadius: '50%',
                 background: '#1E2A3A',
-                border: '1px solid rgba(201,168,76,0.25)',
+                border: '1px solid rgba(140,30,74,0.25)',
                 flexShrink: 0,
                 display: 'flex',
                 alignItems: 'center',
@@ -81,7 +81,7 @@ export default function AdvisorStrip() {
               style={{
                 width: '1px',
                 height: '44px',
-                background: 'rgba(201,168,76,0.3)',
+                background: 'rgba(140,30,74,0.3)',
                 flexShrink: 0,
                 alignSelf: 'center',
               }}
@@ -102,7 +102,7 @@ export default function AdvisorStrip() {
               style={{
                 width: '1px',
                 height: '44px',
-                background: 'rgba(201,168,76,0.3)',
+                background: 'rgba(140,30,74,0.3)',
                 flexShrink: 0,
                 alignSelf: 'center',
               }}

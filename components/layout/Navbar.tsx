@@ -67,7 +67,7 @@ function NavLink({ href, label, active }: { href: string; label: string; active:
         fontSize: '0.63rem',
         letterSpacing: '0.09em',
         fontWeight: 400,
-        color: active ? '#C9A84C' : hovered ? '#C9A84C' : '#B8C0CC',
+        color: active ? '#8C1E4A' : hovered ? '#8C1E4A' : '#B8C0CC',
         transition: 'color 200ms ease',
         textDecoration: 'none',
         whiteSpace: 'nowrap',
@@ -84,7 +84,7 @@ function NavLink({ href, label, active }: { href: string; label: string; active:
           left: 0,
           width: '100%',
           height: '1px',
-          background: '#C9A84C',
+          background: '#8C1E4A',
           transformOrigin: 'left center',
           transform: active || hovered ? 'scaleX(1)' : 'scaleX(0)',
           transition: active ? 'none' : 'transform 200ms ease',
@@ -112,9 +112,9 @@ function CtaButton() {
         fontWeight: 500,
         padding: '8px 20px',
         border: '1px solid',
-        borderColor: hovered ? '#C9A84C' : 'rgba(201,168,76,0.45)',
-        color: hovered ? '#080D18' : '#C9A84C',
-        background: hovered ? '#C9A84C' : 'transparent',
+        borderColor: hovered ? '#8C1E4A' : 'rgba(140,30,74,0.45)',
+        color: hovered ? '#EDE8E0' : '#8C1E4A',
+        background: hovered ? '#8C1E4A' : 'transparent',
         textDecoration: 'none',
         whiteSpace: 'nowrap',
         transition: 'background 220ms ease, color 220ms ease, border-color 220ms ease',
@@ -162,7 +162,7 @@ export default function Navbar() {
           backdropFilter: scrolled ? 'blur(12px) saturate(1.5)' : 'none',
           WebkitBackdropFilter: scrolled ? 'blur(12px) saturate(1.5)' : 'none',
           borderBottom: scrolled
-            ? '1px solid rgba(201,168,76,0.3)'
+            ? '1px solid rgba(140,30,74,0.3)'
             : '1px solid transparent',
           transition:
             'height 350ms ease, background 400ms ease, border-color 400ms ease, backdrop-filter 400ms ease',
@@ -230,7 +230,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
               aria-expanded={menuOpen}
-              style={{ color: '#C9A84C', padding: '4px', background: 'none', border: 'none', cursor: 'pointer' }}
+              style={{ color: '#8C1E4A', padding: '4px', background: 'none', border: 'none', cursor: 'pointer' }}
             >
               <HamburgerIcon />
             </button>
@@ -273,7 +273,7 @@ export default function Navbar() {
               <button
                 onClick={() => setMenuOpen(false)}
                 aria-label="Close menu"
-                style={{ color: '#C9A84C', padding: '4px', background: 'none', border: 'none', cursor: 'pointer' }}
+                style={{ color: '#8C1E4A', padding: '4px', background: 'none', border: 'none', cursor: 'pointer' }}
               >
                 <CloseIcon />
               </button>
@@ -310,7 +310,7 @@ export default function Navbar() {
                       fontFamily: 'var(--font-cormorant), Georgia, serif',
                       fontWeight: 300,
                       fontSize: 'clamp(1.8rem, 6vw, 2.6rem)',
-                      color: pathname === link.href ? '#C9A84C' : '#EDE8E0',
+                      color: pathname === link.href ? '#8C1E4A' : '#EDE8E0',
                       textDecoration: 'none',
                       padding: '16px 0',
                       transition: 'color 200ms ease',
@@ -318,7 +318,7 @@ export default function Navbar() {
                     }}
                     onMouseOver={e => {
                       if (pathname !== link.href)
-                        (e.currentTarget as HTMLElement).style.color = '#C9A84C'
+                        (e.currentTarget as HTMLElement).style.color = '#8C1E4A'
                     }}
                     onMouseOut={e => {
                       if (pathname !== link.href)
@@ -351,8 +351,8 @@ export default function Navbar() {
                     letterSpacing: '0.18em',
                     fontWeight: 500,
                     padding: '12px 28px',
-                    border: '1px solid rgba(201,168,76,0.5)',
-                    color: '#C9A84C',
+                    border: '1px solid rgba(140,30,74,0.5)',
+                    color: '#8C1E4A',
                     textDecoration: 'none',
                   }}
                 >

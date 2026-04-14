@@ -20,10 +20,10 @@ export default function HomePage() {
     <>
       {/* Full-viewport split hero — seamless gradient blend left→right */}
       <section
-        className="relative grid grid-cols-1 lg:grid-cols-2 min-h-screen"
+        className="relative flex flex-col lg:grid lg:grid-cols-2 h-screen lg:min-h-screen overflow-hidden"
         style={{
           background:
-            'linear-gradient(to right, #0B1220 0%, #0B1220 40%, #0D1525 60%, #0E1728 100%)',
+            'linear-gradient(to right, #0C1220 0%, #0C1220 40%, #0E1830 60%, #101535 100%)',
         }}
       >
         {/* Faint central depth glow */}

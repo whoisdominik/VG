@@ -22,7 +22,7 @@ export default function ServiceCTA({ label, href }: ServiceCTAProps) {
         className="absolute inset-0 pointer-events-none"
         aria-hidden="true"
         style={{
-          background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201,168,76,0.03) 0%, transparent 60%)',
+          background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(140,30,74,0.03) 0%, transparent 60%)',
         }}
       />
 

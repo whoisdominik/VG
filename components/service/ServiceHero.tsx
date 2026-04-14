@@ -22,7 +22,7 @@ export default function ServiceHero({ title, subtitle, tagline }: ServiceHeroPro
         aria-hidden="true"
         style={{
           background:
-            'radial-gradient(ellipse 55% 45% at 15% 65%, rgba(201,168,76,0.04) 0%, transparent 55%)',
+            'radial-gradient(ellipse 55% 45% at 15% 65%, rgba(140,30,74,0.04) 0%, transparent 55%)',
         }}
       />
 

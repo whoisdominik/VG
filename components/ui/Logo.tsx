@@ -47,10 +47,10 @@ export default function Logo({ style, className = '' }: LogoProps) {
           fontWeight: 700,
           fontSize: 'inherit',
           letterSpacing: '-0.06em',
-          color: '#F0EDE6',
+          color: '#D42828',
           textShadow: hovered
-            ? '0 0 22px rgba(201,168,76,0.5)'
-            : '0 0 0px rgba(201,168,76,0)',
+            ? '0 0 22px rgba(212,40,40,0.5)'
+            : '0 0 0px rgba(212,40,40,0)',
           transition: 'text-shadow 400ms ease',
           transitionDelay: hovered ? '80ms' : '0ms',
         }}
@@ -63,10 +63,10 @@ export default function Logo({ style, className = '' }: LogoProps) {
           fontWeight: 700,
           fontSize: 'inherit',
           letterSpacing: '-0.06em',
-          color: '#C9A84C',
+          color: '#D42828',
           textShadow: hovered
-            ? '0 0 32px rgba(201,168,76,0.85)'
-            : '0 0 0px rgba(201,168,76,0)',
+            ? '0 0 32px rgba(212,40,40,0.85)'
+            : '0 0 0px rgba(212,40,40,0)',
           transition: 'text-shadow 400ms ease',
           transitionDelay: '0ms',
         }}

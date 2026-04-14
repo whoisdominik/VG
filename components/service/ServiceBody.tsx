@@ -60,7 +60,7 @@ export default function ServiceBody({ sections }: ServiceBodyProps) {
                     style={{
                       fontSize: '0.58rem',
                       letterSpacing: '0.2em',
-                      color: 'rgba(201,168,76,0.4)',
+                      color: 'rgba(140,30,74,0.4)',
                     }}
                     aria-hidden="true"
                   >

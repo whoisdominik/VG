@@ -91,9 +91,9 @@ export default function AboutVladimir() {
                     letterSpacing: '0.2em',
                     textTransform: 'uppercase',
                     color: 'var(--color-accent)',
-                    border: '1px solid rgba(201,168,76,0.35)',
+                    border: '1px solid rgba(140,30,74,0.35)',
                     padding: '6px 14px',
-                    background: 'rgba(201,168,76,0.04)',
+                    background: 'rgba(140,30,74,0.04)',
                   }}
                 >
                   {cred}
@@ -111,8 +111,8 @@ export default function AboutVladimir() {
             <div
               style={{
                 position: 'relative',
-                background: '#111827',
-                border: '1px solid rgba(201,168,76,0.2)',
+                background: '#0E1A2E',
+                border: '1px solid rgba(140,30,74,0.2)',
                 padding: '52px 44px',
                 overflow: 'hidden',
               }}
@@ -128,7 +128,7 @@ export default function AboutVladimir() {
                   fontWeight: 700,
                   fontSize: '280px',
                   lineHeight: 1,
-                  color: 'rgba(201,168,76,0.06)',
+                  color: 'rgba(140,30,74,0.06)',
                   userSelect: 'none',
                   pointerEvents: 'none',
                   letterSpacing: '-0.06em',

@@ -5,20 +5,20 @@
 /* ─── Design Tokens ──────────────────────────────────────────────────────── */
 :root {
   /* Navy palette — 4 depth levels */
-  --color-bg:        #080D18;
-  --color-surface:   #0D1424;
-  --color-surface-2: #111C30;
-  --color-surface-3: #162036;
+  --color-bg:        #0C1220;
+  --color-surface:   #111A2C;
+  --color-surface-2: #162338;
+  --color-surface-3: #1B2840;
 
   /* Borders */
-  --color-border:      #1A2840;
+  --color-border:      #1C2C44;
   --color-border-soft: rgba(255, 255, 255, 0.055);
 
-  /* Gold accent — warm, restrained */
-  --color-accent:       #C9A84C;
-  --color-accent-light: #E0C070;
-  --color-accent-dim:   rgba(201, 168, 76, 0.12);
-  --color-accent-glow:  rgba(201, 168, 76, 0.18);
+  /* Accent — deep burgundy */
+  --color-accent:       #8C1E4A;
+  --color-accent-light: #B8306A;
+  --color-accent-dim:   rgba(140, 30, 74, 0.12);
+  --color-accent-glow:  rgba(140, 30, 74, 0.18);
 
   /* Typography */
   --color-text-primary:   #EDE8E0;
@@ -63,7 +63,7 @@
   }
 
   ::selection {
-    background-color: rgba(201, 168, 76, 0.2);
+    background-color: rgba(140, 30, 74, 0.25);
     color: var(--color-text-primary);
   }
 }

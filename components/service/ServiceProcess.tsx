@@ -66,7 +66,7 @@ export default function ServiceProcess() {
                 className="font-display font-light tabular-nums"
                 style={{
                   fontSize: '2rem',
-                  color: 'rgba(201,168,76,0.25)',
+                  color: 'rgba(140,30,74,0.25)',
                   lineHeight: 1,
                   minWidth: '36px',
                   flexShrink: 0,

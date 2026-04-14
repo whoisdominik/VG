@@ -55,13 +55,13 @@ function WordReveal({
 
 export default function HeroLeft() {
   return (
-    <div className="relative flex items-center justify-end w-full h-full min-h-screen px-8 lg:px-10 xl:px-16 pt-24 pb-16">
-      <div className="w-full max-w-sm lg:max-w-[390px]">
+    <div className="relative flex items-center justify-center lg:justify-end w-full h-auto lg:h-full lg:min-h-screen px-6 lg:px-10 xl:px-16 pt-[72px] pb-3 lg:pt-24 lg:pb-16">
+      <div className="w-full max-w-[340px] lg:max-w-[390px]">
 
         {/* Name — cinematic word-mask reveal */}
         <h1
           className="font-display font-light leading-[1.0] tracking-wide"
-          style={{ fontSize: 'clamp(3.8rem, 6.5vw, 6rem)', letterSpacing: '0.01em' }}
+          style={{ fontSize: 'clamp(2.8rem, 6.5vw, 6rem)', letterSpacing: '0.01em' }}
           aria-label="Vladimir Gonda"
         >
           <WordReveal
@@ -72,7 +72,7 @@ export default function HeroLeft() {
           </WordReveal>
           <WordReveal
             delay={0.15}
-            style={{ color: 'rgba(201,168,76,0.75)' }}
+            style={{ color: 'rgba(140,30,74,0.75)' }}
           >
             Gonda
           </WordReveal>
@@ -101,7 +101,7 @@ export default function HeroLeft() {
           animate={{ scaleX: 1, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="mt-8 mb-8 origin-left"
-          style={{ height: '1px', width: '44px', background: 'rgba(201,168,76,0.5)' }}
+          style={{ height: '1px', width: '44px', background: 'rgba(140,30,74,0.5)' }}
           aria-hidden="true"
         />
 
@@ -128,7 +128,7 @@ export default function HeroLeft() {
                 <Icon
                   size={10}
                   className="shrink-0"
-                  style={{ color: 'rgba(201,168,76,0.55)' }}
+                  style={{ color: 'rgba(140,30,74,0.55)' }}
                 />
                 <span
                   className="font-sans font-normal"
