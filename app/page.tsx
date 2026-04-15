@@ -23,7 +23,7 @@ export default function HomePage() {
         className="relative flex flex-col lg:grid lg:grid-cols-2 h-screen lg:min-h-screen overflow-hidden"
         style={{
           background:
-            'linear-gradient(to right, #152640 0%, #152640 40%, #162A46 60%, #182D4A 100%)',
+            'linear-gradient(to right, #F5F0EA 0%, #F5F0EA 40%, #EEE9E2 60%, #E8E3DB 100%)',
         }}
       >
         {/* Faint central depth glow */}
@@ -32,7 +32,7 @@ export default function HomePage() {
           aria-hidden="true"
           style={{
             background:
-              'radial-gradient(ellipse 60% 55% at 50% 50%, rgba(255,255,255,0.018) 0%, transparent 70%)',
+              'radial-gradient(ellipse 60% 55% at 50% 50%, rgba(196,30,42,0.03) 0%, transparent 70%)',
           }}
         />
         <HeroLeft />

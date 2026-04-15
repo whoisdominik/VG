@@ -166,7 +166,7 @@ function ServiceCard({
           style={{
             fontSize: '0.58rem',
             letterSpacing: '0.28em',
-            color: 'rgba(150,32,48,0.4)',
+            color: 'rgba(196,30,42,0.4)',
           }}
         >
           {String(cardNumber).padStart(2, '0')}
@@ -208,7 +208,7 @@ export default function HomeSections() {
   return (
     <>
       {/* ── Section 1: Stats Strip ─────────────────────────────────────── */}
-      <section style={{ background: '#0F2035', borderTop: '1px solid rgba(255,255,255,0.04)' }}>
+      <section style={{ background: '#EDE8DF', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
         <div
           ref={statsRef}
           className="max-w-screen-xl mx-auto px-6 lg:px-10 py-20 flex flex-wrap justify-center items-center gap-0"
@@ -218,7 +218,7 @@ export default function HomeSections() {
               {i > 0 && (
                 <div
                   className="hidden sm:block self-stretch mx-0"
-                  style={{ width: '1px', minHeight: '64px', background: 'rgba(255,255,255,0.06)' }}
+                  style={{ width: '1px', minHeight: '64px', background: 'rgba(0,0,0,0.08)' }}
                   aria-hidden="true"
                 />
               )}
@@ -259,7 +259,7 @@ export default function HomeSections() {
                 style={{ fontSize: 'clamp(1.7rem, 3vw, 2.6rem)', color: 'var(--color-text-primary)' }}
               >
                 Six disciplines.{' '}
-                <span className="italic" style={{ color: 'rgba(150,32,48,0.8)' }}>One advisor.</span>
+                <span className="italic" style={{ color: 'rgba(196,30,42,0.8)' }}>One advisor.</span>
               </h2>
             </div>
           </motion.div>
@@ -289,7 +289,7 @@ export default function HomeSections() {
       {/* ── Section 5: Why Vladimir ────────────────────────────────────── */}
       <section
         className="py-[var(--section-padding)] px-6 lg:px-10"
-        style={{ background: 'var(--color-surface)', borderTop: '1px solid rgba(255,255,255,0.04)' }}
+        style={{ background: 'var(--color-surface)', borderTop: '1px solid rgba(0,0,0,0.06)' }}
       >
         <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-28 items-start">
@@ -335,14 +335,14 @@ export default function HomeSections() {
                   viewport={{ once: true, margin: '200px' }}
                   transition={{ delay: i * 0.09, duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
                   className="flex gap-5 py-6"
-                  style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}
+                  style={{ borderBottom: '1px solid rgba(0,0,0,0.07)' }}
                 >
                   <div
                     className="shrink-0 mt-1"
                     style={{
                       width: '2px',
                       minHeight: '1.2rem',
-                      background: 'rgba(150,32,48,0.45)',
+                      background: 'rgba(196,30,42,0.45)',
                       borderRadius: '1px',
                     }}
                     aria-hidden="true"
@@ -372,14 +372,14 @@ export default function HomeSections() {
       {/* ── Section 6: Contact CTA ─────────────────────────────────────── */}
       <section
         className="relative overflow-hidden py-[var(--section-padding)] px-6 lg:px-10"
-        style={{ background: '#0F2035' }}
+        style={{ background: '#EDE8DF' }}
       >
         {/* Subtle radial glow */}
         <div
           className="absolute inset-0 pointer-events-none"
           aria-hidden="true"
           style={{
-            background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(150,32,48,0.04) 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(196,30,42,0.04) 0%, transparent 65%)',
           }}
         />
 

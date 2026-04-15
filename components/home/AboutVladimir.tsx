@@ -26,7 +26,7 @@ export default function AboutVladimir() {
       style={{
         background: 'var(--color-bg)',
         padding: 'var(--section-padding) 0',
-        borderTop: '1px solid rgba(255,255,255,0.04)',
+        borderTop: '1px solid rgba(0,0,0,0.06)',
       }}
     >
       <div className="max-w-screen-xl mx-auto px-6 lg:px-10">
@@ -91,9 +91,9 @@ export default function AboutVladimir() {
                     letterSpacing: '0.2em',
                     textTransform: 'uppercase',
                     color: 'var(--color-accent)',
-                    border: '1px solid rgba(150,32,48,0.35)',
+                    border: '1px solid rgba(196,30,42,0.35)',
                     padding: '6px 14px',
-                    background: 'rgba(150,32,48,0.04)',
+                    background: 'rgba(196,30,42,0.04)',
                   }}
                 >
                   {cred}
@@ -111,8 +111,8 @@ export default function AboutVladimir() {
             <div
               style={{
                 position: 'relative',
-                background: '#162840',
-                border: '1px solid rgba(150,32,48,0.2)',
+                background: '#EDE8DF',
+                border: '1px solid rgba(196,30,42,0.2)',
                 padding: '52px 44px',
                 overflow: 'hidden',
               }}
@@ -128,7 +128,7 @@ export default function AboutVladimir() {
                   fontWeight: 700,
                   fontSize: '280px',
                   lineHeight: 1,
-                  color: 'rgba(150,32,48,0.06)',
+                  color: 'rgba(196,30,42,0.06)',
                   userSelect: 'none',
                   pointerEvents: 'none',
                   letterSpacing: '-0.06em',

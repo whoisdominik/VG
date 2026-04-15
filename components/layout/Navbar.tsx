@@ -67,7 +67,7 @@ function NavLink({ href, label, active }: { href: string; label: string; active:
         fontSize: '0.63rem',
         letterSpacing: '0.09em',
         fontWeight: 400,
-        color: active ? '#962030' : hovered ? '#962030' : '#B8C0CC',
+        color: active ? '#C41E2A' : hovered ? '#C41E2A' : '#666660',
         transition: 'color 200ms ease',
         textDecoration: 'none',
         whiteSpace: 'nowrap',
@@ -84,7 +84,7 @@ function NavLink({ href, label, active }: { href: string; label: string; active:
           left: 0,
           width: '100%',
           height: '1px',
-          background: '#962030',
+          background: '#C41E2A',
           transformOrigin: 'left center',
           transform: active || hovered ? 'scaleX(1)' : 'scaleX(0)',
           transition: active ? 'none' : 'transform 200ms ease',
@@ -112,9 +112,9 @@ function CtaButton() {
         fontWeight: 500,
         padding: '8px 20px',
         border: '1px solid',
-        borderColor: hovered ? '#962030' : 'rgba(150,32,48,0.45)',
-        color: hovered ? '#EDE8E0' : '#962030',
-        background: hovered ? '#962030' : 'transparent',
+        borderColor: hovered ? '#C41E2A' : 'rgba(196,30,42,0.45)',
+        color: hovered ? '#F5F0EA' : '#C41E2A',
+        background: hovered ? '#C41E2A' : 'transparent',
         textDecoration: 'none',
         whiteSpace: 'nowrap',
         transition: 'background 220ms ease, color 220ms ease, border-color 220ms ease',
@@ -158,11 +158,11 @@ export default function Navbar() {
           right: 0,
           zIndex: 50,
           height: scrolled ? '56px' : '72px',
-          background: scrolled ? 'rgba(18,36,58,0.94)' : 'transparent',
+          background: scrolled ? 'rgba(245,240,234,0.96)' : 'transparent',
           backdropFilter: scrolled ? 'blur(12px) saturate(1.5)' : 'none',
           WebkitBackdropFilter: scrolled ? 'blur(12px) saturate(1.5)' : 'none',
           borderBottom: scrolled
-            ? '1px solid rgba(150,32,48,0.3)'
+            ? '1px solid rgba(196,30,42,0.3)'
             : '1px solid transparent',
           transition:
             'height 350ms ease, background 400ms ease, border-color 400ms ease, backdrop-filter 400ms ease',
@@ -230,7 +230,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
               aria-expanded={menuOpen}
-              style={{ color: '#962030', padding: '4px', background: 'none', border: 'none', cursor: 'pointer' }}
+              style={{ color: '#C41E2A', padding: '4px', background: 'none', border: 'none', cursor: 'pointer' }}
             >
               <HamburgerIcon />
             </button>
@@ -252,7 +252,7 @@ export default function Navbar() {
               position: 'fixed',
               inset: 0,
               zIndex: 60,
-              background: '#152640',
+              background: '#F5F0EA',
               display: 'flex',
               flexDirection: 'column',
             }}
@@ -265,7 +265,7 @@ export default function Navbar() {
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 padding: '0 24px',
-                borderBottom: '1px solid rgba(255,255,255,0.06)',
+                borderBottom: '1px solid rgba(0,0,0,0.08)',
                 flexShrink: 0,
               }}
             >
@@ -273,7 +273,7 @@ export default function Navbar() {
               <button
                 onClick={() => setMenuOpen(false)}
                 aria-label="Close menu"
-                style={{ color: '#962030', padding: '4px', background: 'none', border: 'none', cursor: 'pointer' }}
+                style={{ color: '#C41E2A', padding: '4px', background: 'none', border: 'none', cursor: 'pointer' }}
               >
                 <CloseIcon />
               </button>
@@ -301,7 +301,7 @@ export default function Navbar() {
                     duration: 0.55,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}
+                  style={{ borderBottom: '1px solid rgba(0,0,0,0.07)' }}
                 >
                   <Link
                     href={link.href}
@@ -310,7 +310,7 @@ export default function Navbar() {
                       fontFamily: 'var(--font-cormorant), Georgia, serif',
                       fontWeight: 300,
                       fontSize: 'clamp(1.8rem, 6vw, 2.6rem)',
-                      color: pathname === link.href ? '#962030' : '#EDE8E0',
+                      color: pathname === link.href ? '#C41E2A' : '#111111',
                       textDecoration: 'none',
                       padding: '16px 0',
                       transition: 'color 200ms ease',
@@ -318,11 +318,11 @@ export default function Navbar() {
                     }}
                     onMouseOver={e => {
                       if (pathname !== link.href)
-                        (e.currentTarget as HTMLElement).style.color = '#962030'
+                        (e.currentTarget as HTMLElement).style.color = '#C41E2A'
                     }}
                     onMouseOut={e => {
                       if (pathname !== link.href)
-                        (e.currentTarget as HTMLElement).style.color = '#EDE8E0'
+                        (e.currentTarget as HTMLElement).style.color = '#111111'
                     }}
                   >
                     {link.label}
@@ -351,8 +351,8 @@ export default function Navbar() {
                     letterSpacing: '0.18em',
                     fontWeight: 500,
                     padding: '12px 28px',
-                    border: '1px solid rgba(150,32,48,0.5)',
-                    color: '#962030',
+                    border: '1px solid rgba(196,30,42,0.5)',
+                    color: '#C41E2A',
                     textDecoration: 'none',
                   }}
                 >

@@ -16,7 +16,7 @@ export default function ServiceProcess() {
       style={{
         background: 'var(--color-bg)',
         padding: '80px 0',
-        borderTop: '1px solid rgba(255,255,255,0.04)',
+        borderTop: '1px solid rgba(0,0,0,0.06)',
       }}
     >
       <div className="max-w-screen-xl mx-auto px-6 lg:px-10">
@@ -57,7 +57,7 @@ export default function ServiceProcess() {
                 alignItems: 'baseline',
                 gap: '28px',
                 padding: '22px 0',
-                borderBottom: i < processSteps.length - 1 ? '1px solid rgba(255,255,255,0.05)' : 'none',
+                borderBottom: i < processSteps.length - 1 ? '1px solid rgba(0,0,0,0.07)' : 'none',
               }}
             >
               {/* Number */}
@@ -66,7 +66,7 @@ export default function ServiceProcess() {
                 className="font-display font-light tabular-nums"
                 style={{
                   fontSize: '2rem',
-                  color: 'rgba(150,32,48,0.25)',
+                  color: 'rgba(196,30,42,0.25)',
                   lineHeight: 1,
                   minWidth: '36px',
                   flexShrink: 0,

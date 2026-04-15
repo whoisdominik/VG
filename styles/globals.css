@@ -4,26 +4,26 @@
 
 /* ─── Design Tokens ──────────────────────────────────────────────────────── */
 :root {
-  /* Navy palette — 4 depth levels (lighter blue) */
-  --color-bg:        #152640;
-  --color-surface:   #1A2E4A;
-  --color-surface-2: #1F3554;
-  --color-surface-3: #243C5E;
+  /* Off-white palette */
+  --color-bg:        #F5F0EA;
+  --color-surface:   #EDE8DF;
+  --color-surface-2: #E3DDD3;
+  --color-surface-3: #D9D3C8;
 
   /* Borders */
-  --color-border:      #253F62;
-  --color-border-soft: rgba(255, 255, 255, 0.07);
+  --color-border:      #C4BDB2;
+  --color-border-soft: rgba(0, 0, 0, 0.07);
 
-  /* Accent — deep wine-burgundy (red-dominant, not purple) */
-  --color-accent:       #962030;
-  --color-accent-light: #C03348;
-  --color-accent-dim:   rgba(150, 32, 48, 0.12);
-  --color-accent-glow:  rgba(150, 32, 48, 0.18);
+  /* Accent — red */
+  --color-accent:       #C41E2A;
+  --color-accent-light: #E8333F;
+  --color-accent-dim:   rgba(196, 30, 42, 0.10);
+  --color-accent-glow:  rgba(196, 30, 42, 0.16);
 
   /* Typography */
-  --color-text-primary:   #EDE8E0;
-  --color-text-secondary: #7A8A9E;
-  --color-text-tertiary:  #44526A;
+  --color-text-primary:   #0F0F0E;
+  --color-text-secondary: #555550;
+  --color-text-tertiary:  #999990;
 
   /* Spacing rhythm */
   --section-padding: 130px;
@@ -63,7 +63,7 @@
   }
 
   ::selection {
-    background-color: rgba(150, 32, 48, 0.25);
+    background-color: rgba(196, 30, 42, 0.15);
     color: var(--color-text-primary);
   }
 }

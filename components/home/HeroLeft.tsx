@@ -72,7 +72,7 @@ export default function HeroLeft() {
           </WordReveal>
           <WordReveal
             delay={0.15}
-            style={{ color: 'rgba(150,32,48,0.75)' }}
+            style={{ color: 'rgba(196,30,42,0.75)' }}
           >
             Gonda
           </WordReveal>
@@ -101,7 +101,7 @@ export default function HeroLeft() {
           animate={{ scaleX: 1, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="mt-8 mb-8 origin-left"
-          style={{ height: '1px', width: '44px', background: 'rgba(150,32,48,0.5)' }}
+          style={{ height: '1px', width: '44px', background: 'rgba(196,30,42,0.5)' }}
           aria-hidden="true"
         />
 
@@ -120,7 +120,7 @@ export default function HeroLeft() {
             >
               {i > 0 && (
                 <div
-                  style={{ height: '1px', background: 'rgba(255,255,255,0.05)' }}
+                  style={{ height: '1px', background: 'rgba(0,0,0,0.07)' }}
                   aria-hidden="true"
                 />
               )}
@@ -128,7 +128,7 @@ export default function HeroLeft() {
                 <Icon
                   size={10}
                   className="shrink-0"
-                  style={{ color: 'rgba(150,32,48,0.55)' }}
+                  style={{ color: 'rgba(196,30,42,0.55)' }}
                 />
                 <span
                   className="font-sans font-normal"

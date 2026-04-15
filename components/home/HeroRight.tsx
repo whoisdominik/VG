@@ -52,7 +52,7 @@ export default function HeroRight() {
           style={{
             /* desktop: fixed aspect ratio; mobile: height driven by flex */
             aspectRatio: undefined,
-            boxShadow: '0 0 0 1px rgba(150,32,48,0.12), 0 32px 80px rgba(0,0,0,0.6)',
+            boxShadow: '0 0 0 1px rgba(196,30,42,0.15), 0 8px 48px rgba(0,0,0,0.1)',
           }}
         >
           {/* aspect-ratio shim — desktop only */}
@@ -72,16 +72,16 @@ export default function HeroRight() {
           {/* Placeholder shown while video is absent */}
           <div
             className="absolute inset-0 flex flex-col items-center justify-center gap-4"
-            style={{ background: '#112038' }}
+            style={{ background: '#E3DDD3' }}
           >
             <div
               className="w-12 h-12 rounded-full flex items-center justify-center"
               style={{
-                border: '1px solid rgba(150,32,48,0.4)',
-                background: 'rgba(150,32,48,0.06)',
+                border: '1px solid rgba(196,30,42,0.4)',
+                background: 'rgba(196,30,42,0.06)',
               }}
             >
-              <Play size={14} style={{ color: 'rgba(150,32,48,0.7)' }} fill="currentColor" />
+              <Play size={14} style={{ color: 'rgba(196,30,42,0.7)' }} fill="currentColor" />
             </div>
             <p
               className="font-sans text-center px-8 leading-relaxed"
@@ -96,10 +96,10 @@ export default function HeroRight() {
             className="absolute inset-0 pointer-events-none z-10"
             style={{
               background: [
-                'linear-gradient(to right,  #152640 0%, transparent 22%)',
-                'linear-gradient(to left,   #182D4A 0%, transparent 22%)',
-                'linear-gradient(to bottom, #152640 0%, transparent 26%)',
-                'linear-gradient(to top,    #152A46 0%, transparent 26%)',
+                'linear-gradient(to right,  #F5F0EA 0%, transparent 22%)',
+                'linear-gradient(to left,   #E8E3DB 0%, transparent 22%)',
+                'linear-gradient(to bottom, #F5F0EA 0%, transparent 26%)',
+                'linear-gradient(to top,    #EDE8DF 0%, transparent 26%)',
               ].join(', '),
             }}
             aria-hidden="true"
@@ -108,7 +108,7 @@ export default function HeroRight() {
           {/* Inner border glow */}
           <div
             className="absolute inset-0 pointer-events-none z-20"
-            style={{ boxShadow: 'inset 0 0 0 1px rgba(150,32,48,0.08)' }}
+            style={{ boxShadow: 'inset 0 0 0 1px rgba(196,30,42,0.08)' }}
             aria-hidden="true"
           />
         </div>

@@ -73,7 +73,7 @@ export default function Footer() {
             </p>
             <ul className="flex flex-col gap-0">
               {services.map((service) => (
-                <li key={service.slug} style={{ borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
+                <li key={service.slug} style={{ borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
                   <Link
                     href={service.href}
                     className="block py-2.5 font-sans transition-colors duration-300 hover:text-[var(--color-text-primary)]"
