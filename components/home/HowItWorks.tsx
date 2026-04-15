@@ -14,7 +14,7 @@ export default function HowItWorks() {
       ref={sectionRef}
       aria-labelledby="process-heading"
       style={{
-        background: '#101D34',
+        background: '#183048',
         padding: 'var(--section-padding) 0',
         borderTop: '1px solid rgba(255,255,255,0.04)',
         overflow: 'hidden',
@@ -79,7 +79,7 @@ export default function HowItWorks() {
               left: 'calc(10% + 20px)',
               right: 'calc(10% + 20px)',
               height: '1px',
-              background: 'linear-gradient(90deg, transparent, rgba(140,30,74,0.3) 15%, rgba(140,30,74,0.3) 85%, transparent)',
+              background: 'linear-gradient(90deg, transparent, rgba(150,32,48,0.3) 15%, rgba(150,32,48,0.3) 85%, transparent)',
             }}
           />
 
@@ -106,7 +106,7 @@ export default function HowItWorks() {
                   fontWeight: 700,
                   fontSize: '88px',
                   lineHeight: 1,
-                  color: 'rgba(140,30,74,0.15)',
+                  color: 'rgba(150,32,48,0.15)',
                   userSelect: 'none',
                   marginBottom: '-24px',
                   letterSpacing: '-0.04em',
@@ -123,7 +123,7 @@ export default function HowItWorks() {
                   height: '8px',
                   borderRadius: '50%',
                   background: 'var(--color-accent)',
-                  border: '1px solid rgba(140,30,74,0.5)',
+                  border: '1px solid rgba(150,32,48,0.5)',
                   flexShrink: 0,
                   marginBottom: '28px',
                   position: 'relative',
@@ -179,7 +179,7 @@ export default function HowItWorks() {
                   fontWeight: 700,
                   fontSize: '56px',
                   lineHeight: 1,
-                  color: 'rgba(140,30,74,0.2)',
+                  color: 'rgba(150,32,48,0.2)',
                   userSelect: 'none',
                   flexShrink: 0,
                   minWidth: '48px',

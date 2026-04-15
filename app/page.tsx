@@ -23,7 +23,7 @@ export default function HomePage() {
         className="relative flex flex-col lg:grid lg:grid-cols-2 h-screen lg:min-h-screen overflow-hidden"
         style={{
           background:
-            'linear-gradient(to right, #0C1220 0%, #0C1220 40%, #0E1830 60%, #101535 100%)',
+            'linear-gradient(to right, #152640 0%, #152640 40%, #162A46 60%, #182D4A 100%)',
         }}
       >
         {/* Faint central depth glow */}
